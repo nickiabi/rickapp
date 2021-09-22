@@ -1,5 +1,21 @@
 import React from "react";
 import Tarjeta from "./Tarjeta";
+const infoPersonaje = [
+  {
+    nombre: "rick", urlImagen: ""
+
+  },
+  {
+    nombre: "rick", urlImagen: ""
+  },
+  {
+    nombre: "rick", urlImagen: ""
+  },
+];
+const transformarInfoPersonaje = ({ nombre, urlImagen }) => {
+  return <Tarjeta urlImagen={urlImagen} nombrePersonaje={nombre} />
+};
+const tarjetas = infoPersonaje.map(transformarInfoPersonaje);
 
 const Cuerpo = () => {
   return (
@@ -11,14 +27,8 @@ const Cuerpo = () => {
       <div>
         <h1> </h1>
       </div>
-      <div className="Tarjetero">
-        <Tarjeta />
-        <Tarjeta />
-        <Tarjeta />
-        <Tarjeta />
-        <Tarjeta />
-      </div>
-    </main>
+      <div className="Tarjetero">{tarjetas}</div>
+    </main >
   );
 };
 

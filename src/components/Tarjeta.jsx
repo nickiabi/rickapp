@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tarjeta = () => {
+const Tarjeta = ({urlImagen, nombrePersonaje}) => {
   return (
     <div className="Tarjeta">
       <div className="imagentarjeta">

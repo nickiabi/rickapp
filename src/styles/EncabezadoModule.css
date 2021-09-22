@@ -1,0 +1,35 @@
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    justify-content: space-between;
+  }
+  .IconoEncabezado svg {
+    fill: black;
+  }
+  
+  /*.navegacionEncabezado {
+
+  }*/
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  li {
+    margin-left: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
